@@ -17,7 +17,15 @@ public void addTrain(Train train){
 public void addSchedule(Schedule schedule){
     schedules.add(schedule);
 }
-public
-
-
+public List<Schedule> findMyTrain(String startStationName, String endStationName)
+{
+    List <Schedule> res = new ArrayList<>();
+    for(Schedule schedule:schedules){
+        if(schedule.getStation().getStationName().equals(startStationName) ||
+        schedule.getStation().getStationName().equals(endStationName)){
+            res.add(schedule);
+        }
+    }
+    return res;
+}
 }
