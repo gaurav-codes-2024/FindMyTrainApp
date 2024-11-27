@@ -5,10 +5,6 @@ public class Schedule {
     private String departureTime;
     private Platform platform;
 
-
-
-
-
     public Train getTrain() {
         return train;
     }
@@ -68,3 +64,4 @@ public class Schedule {
                 '}';
     }
 }
+
