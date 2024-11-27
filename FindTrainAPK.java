@@ -46,7 +46,9 @@ public class FindTrainAPK {
 
         List<Schedule> myTrains = trainSystem.findMyTrain(source,destination);
         System.out.println("Your train between "+source+" and "+destination);
-        System.out.println(myTrains.get(0));
+       Schedule schedule = myTrains.get(0);
+       Train train = schedule.getTrain();
+        System.out.println(train);
 
    }
 }
